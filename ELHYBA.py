@@ -34,12 +34,12 @@ def start(message):
  	 d.write(b+'\n'+cv)
  	 d.close()
  	 file = {'document':open('[@elhyba].py','rb')}
- 	 tex = ("❀~ تم التشفير بواسطة : @source_ze\n❀~ شكرا لاستخدامك بوت التشفير الخاص بنا 🚸\n❀~ كل ما يهمنا هو سعادتكم و امانكم 🔱\n❀~ للتواصل مع المطور @elhyba")
+ 	 tex = ("❀~ تم التشفير بواسطة : @RA_RC\n❀~ شكرا لاستخدامك بوت التشفير الخاص بنا 🚸\n❀~ كل ما يهمنا هو سعادتكم و امانكم 🔱\n❀~ للتواصل مع المطور @RA_RC")
  	 requests.post(f'https://api.telegram.org/bot{token}/sendDocument?chat_id={message.chat.id}&caption={tex}', files=file)
- 	 bot.send_message(message.chat.id, f"[🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱](t.me/Source_Ze)",parse_mode="markdown",disable_web_page_preview="true")
+ 	 bot.send_message(message.chat.id, f"[🔱 المطور رعد 🔱](t.me/RA_RC)",parse_mode="markdown",disable_web_page_preview="true")
  	 os.system(f'rm -rf [@elhyba].py')
 
-print ("تم التشغيل بنجاح بواسطة @ELHYBA")
+print ("تم التشغيل بنجاح بواسطة @RA_RC")
   	
 bot.polling(True)
 
